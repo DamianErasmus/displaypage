@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+    <title>Stacked Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- INDEX -->
+    <!-- ----------------------------------- -->
+    <!-- 1. Header -->
+    <!-- 2. Left Side -->
+    <!-- 3. Right Side -->
+    <!-- 4. Footer -->
+    <!-- ----------------------------------- -->
+
+    <!-- Header -->
+    <header>
+        <img src="/images/logo/176145251_457005178737292_5086699519919888519_n.png" alt="">
+    </header>
+
+    <div class="main_container">
+
+        <!-- Left Side -->
+        <div class="left_side">
+            <div class="carousel">
+                <button class="left_btn" id="scroll_left"><i class="fas fa-angle-left"></i></button>
+                <div class="tshirts">
+                    <div class="tshirt">
+                        <h3>White Tshirt</h3>
+                        <img src="/images/left/anomaly-WWesmHEgXDs-unsplash.jpg" alt="Photo by Anomaly on Unsplash">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laborum veritatis assumenda soluta perspiciatis animi.</p>
+                    </div>
+                    <div class="tshirt">
+                        <h3>Pink Tshirt</h3>
+                        <img src="/images/left/christian-ferrer-yNhzuCZaq5s-unsplash.jpg" alt="Photo by christian ferrer on Unsplash">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laborum veritatis assumenda soluta perspiciatis animi.</p>
+                    </div>
+                    <div class="tshirt">
+                        <h3>Black Tshirt</h3>
+                        <img src="/images/left/jacinto-diego-XGtMs_0YqAY-unsplash.jpg" alt="Photo by Jacinto Diego on Unsplash">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laborum veritatis assumenda soluta perspiciatis animi.</p>
+                    </div>
+                    <div class="tshirt">
+                        <h3>Red Tshirt</h3>
+                        <img src="/images/left/rubens-nguyen-Fy7RX0gHZRM-unsplash.jpg" alt="Photo by Rubens Nguyen on Unsplash">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laborum veritatis assumenda soluta perspiciatis animi.</p>
+                    </div>
+                    <div class="tshirt">
+                        <h3>Yellow Tshirt</h3>
+                        <img src="/images/left/sigmund-wngWQPuZIOc-unsplash.jpg" alt="Photo by Sigmund on Unsplash">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laborum veritatis assumenda soluta perspiciatis animi.</p>
+                    </div>
+                </div>
+                <button class="right_btn" id="scroll_right"><i class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right_side">
+            <div class="front">
+                <img src="/images/right/john-paul-henry-Da0jti8Ekp8-unsplash.jpg" alt="Photo by John-Paul Henry on Unsplash" class="front_art first">
+                <img src="/images/right/robert-andall-6fRy3D_CGkE-unsplash.jpg" alt="Photo by Robert Andall on Unsplash" class="front_art">
+                <img src="/images/right/ian-dooley-wzRKn-AjKf4-unsplash.jpg" alt="Photo by ian dooley on Unsplash" class="front_art">
+                <img src="/images/right/nrd-xamobvPk0BM-unsplash.jpg" alt="Photo by nrd on Unsplash" class="front_art">
+                <img src="/images/right/clarisse-meyer-5xbdx3TqPnw-unsplash.jpg" alt="Photo by Clarisse Meyer on Unsplash" class="front_art">
+            </div>
+            <div class="back">
+                <img src="/images/right/taylor-dG4Eb_oC5iM-unsplash.jpg" alt="Photo by Taylor on Unsplash" class="back_art first">
+                <img src="/images/right/micah-KgNZGaCEmSE-unsplash.jpg" alt="Photo by micah. on Unsplash" class="back_art">
+                <img src="/images/right/john-fornander-7oCKwO0TPhE-unsplash.jpg" alt="Photo by John Fornander on Unsplash" class="back_art">
+                <img src="/images/right/joshua-earle-p2TQ-3Bh3Oo-unsplash.jpg" alt="Photo by Joshua Earle on Unsplash" class="back_art">
+                <img src="/images/right/aaron-weiss-sBJ4ZWUXhWo-unsplash.jpg" alt="Photo by Aaron Weiss on Unsplash" class="back_art">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="section-footer">
+        <div class="container">
+            <div class="contact_details" id="contact">
+                <h3>Contact Details</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum soluta eos iusto.</p>
+            </div>
+            <div class="social_media">
+                <h3>Social Media</h3>
+                <div class="media-icons">
+                    <a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3>Get In Touch</h3>
+                <form name="email-form" method="POST" data-netlify="true">
+                    <div class="email-form">
+                        <span class="form-control-wrap" id="git">
+                            <input type="email" name="email" id="email" size="40" class="form-control" placeholder="Email"/>
+                        </span>
+                        <button type="submit" class="form-control submit">
+                        <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

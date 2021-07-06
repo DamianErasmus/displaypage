@@ -1,0 +1,553 @@
+@font-face {
+    font-family: 'Muli';
+    src: url(/font/Muli-Regular.ttf);
+}
+
+:root {
+    --color-1: #23303f;
+    --color-2: #5f442e;
+    --color-3: #050505;
+    --color-4: #b0abac;
+    --color-5: #4f555e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', Fallback, sans-serif;
+}
+
+.main_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 700px;
+    overflow: hidden;
+}
+
+
+
+
+/* INDEX */
+/* ----------------------------- */
+/* 1. Header */
+/* 2. Left Side */
+/* 3. Right Side */
+/* 4. Footer */
+/* 5. Responsive Styles */
+/* ----------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header */
+header {
+    background-color: transparent;
+    position: absolute;
+    z-index: 3;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+header img {
+    max-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LEFT SIDE*/
+.left_side {
+    background-color: var(--color-4);
+    display: block;
+    width: 40vw;
+    height: 720px;
+}
+
+.left_side h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.left_side .carousel {
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+
+.left_side .tshirts{
+    position: relative;
+    width: 30vw;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_side .tshirt {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 100%;
+    transition: transform 500ms ease-out;
+}
+
+.left_side .tshirt p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.left_side .tshirt:not(:first-child) {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.left_side .tshirt:last-child {
+    transform: translateX(-100%);
+}
+
+.left_side img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+
+.left_side button {
+    background-color: transparent;
+    border: 0;
+    font-size: 2.5rem;
+    z-index: 2;
+    position: relative;
+    width: 2vw;
+    height: 10%;
+    margin: auto;
+    margin-top: 15rem;
+}
+
+.left_side button:hover {
+    color: var(--color-1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RIGHT SIDE*/
+.right_side {
+    position: relative;
+    background-color: var(--color-1);
+    width: 70vw;
+}
+
+.right_side img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: width 500ms ease-in-out;
+}
+
+.right_side .front {
+    z-index: 2;
+    background-color: var(--color-2);
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 250px;
+    height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right_side img:not(.first) {
+    width: 0%;
+}
+
+
+.right_side .back {
+    background-color: var(--color-5);
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    height: 400px;
+    width: 450px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.section-footer {
+    background: var(--color-2);
+    color: var(--color-3);
+    padding: 2rem 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    min-height: 20px;
+}
+
+.section-footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.section-footer h3 {
+    color: var(--color-3);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-footer p {
+    color: var(--color-3);
+}
+
+.social_media {
+    text-align: center;
+}
+
+.social_media h3 {
+    margin-bottom: 1rem;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.media-icons a {
+    position: relative;
+    color: var(--color-3);
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+
+.media-icons a:not(:last-child) {
+    margin-right: 60px;
+}
+
+.media-icons a:hover {
+    color: var(--color-1);
+    transform: scale(1.5);
+}
+
+/* Email form*/
+.email-form {
+    width: 100%;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    border-radius: 20px;
+    line-height: 0;
+    margin-top: 1rem;
+}
+
+.email-form .form-control {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: var(--color-3);
+    background-color: transparent;
+    font-family: inherit;
+    margin: 0;
+    padding: 0 3rem 0 1.5rem;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+}
+
+.email-form .submit {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: var(--color-3);
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    transition: ease-in-out 0.5s;
+}
+
+.email-form .submit:hover {
+    background-color: var(--color-1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+
+@media (max-width:910px) {
+    header {
+        height: 70px;
+    }
+    .right_side .front {
+        top: 100px;
+        width: 150px;
+        height: 130px;
+    }
+    .right_side .back {
+        top: 150px;
+        width: 300px;
+        left: 25%;
+        height: 250px;
+    } 
+    .left_side {
+        max-height: 400px;
+    }
+    .left_side h3 {
+        font-size: 30px;
+        padding: 20px;
+    }
+    .left_side .tshirts{
+        margin-top: 50px;
+        max-height: 600px;
+    }
+    .left_side img {
+        height: 200px;
+    }
+
+    .left_side .carousel{
+        height: 50vh;
+    }
+}
+
+
+
+
+@media (max-width:800px) {
+    .left_side, 
+    .right_side {
+        max-height: 50vh;
+    }
+    .left_side .tshirts{
+        margin: 0;
+        width: 25vw;
+        max-height: 40vh;
+    }
+    header {
+        left: 0;
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left_side h3 {
+        font-size: 1.2rem;
+    }
+
+    .left_side .tshirt img{
+        height: 40%;
+    }
+
+    .left_side .tshirt p {
+        font-size: 15px;
+    }
+
+    .section-footer {
+        font-size: 1.1rem;
+        justify-content: center;
+        align-items: center;
+        min-height: 15vh;
+    }
+}
+
+@media (max-width:700px) {
+    .section-footer .container{
+        grid-template-columns: repeat(1, 3fr);
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .left_side {
+        max-height: 85vh;
+    }
+    .left_side .tshirts {
+        width: 50vw;
+        max-height: 80vh;
+    }
+    .left_side .tshirt {
+        max-height: 100vh;
+    }
+    .right_side {
+        display: none;
+    }
+
+    .left_side,
+    header {
+        width: 100vw;
+    }
+
+
+    .left_side .carousel {
+        grid-template-columns: repeat(3);
+        grid-gap: 0;
+    }
+    
+    .left_side .carousel button {
+        max-width: 10vw;
+        margin: auto 2rem;
+        font-size: 2.5rem;
+    }
+
+    .left_side h3 {
+        font-size: 1.5rem;
+        margin-top: 25px;
+    }
+
+    .left_side p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .left_side {
+        max-height: 70vh;
+    }
+    .left_side .tshirts {
+        width: 60vw;
+        max-height: 70vh;
+    }
+    .left_side .tshirt {
+        max-height: 100vh;
+    }
+    .left_side button {
+        font-size: 1rem;
+    }
+
+    .left_side h3 {
+        font-size: 1.2rem;
+    }
+
+    .left_side p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-height: 1000px) {
+    .left_side,
+    .right_side {
+        max-height: 50vh;
+    }
+}
